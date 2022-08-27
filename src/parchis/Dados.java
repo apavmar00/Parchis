@@ -2,7 +2,7 @@ package parchis;
 
 /**
  *
- * Dos dados (Se generan aleatoriamente desde el 1 hasta el 6)
+ * Dos dados (Se generan aleatoriamente desde el 1 hasta el 6).
  * 
  */
 

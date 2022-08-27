@@ -2,7 +2,7 @@ package parchis;
 
 /**
  *
- * 
+ * comentario
  * 
  */
 
