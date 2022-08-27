@@ -6,6 +6,6 @@ package parchis;
  * 
  */
 
-public class Fichas {
+public class Ficha {
     
 }
