@@ -8,5 +8,12 @@ package parchis;
  */
 
 public class Jugador {
+    private Ficha[] ficha = new Ficha[4];
     
+    private String nombre;
+    private String colorFichas;
+    
+    /*public Jugador(String nombre, String color){
+        ficha[1] = 
+    }*/
 }
