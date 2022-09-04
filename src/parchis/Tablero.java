@@ -24,6 +24,7 @@ public class Tablero {
         Integer lleno = 1;
         Integer pasillos = 2;
         Integer meta = 3;
+        int cont = 0;
         
         for(int fila = 0; fila < 19; fila++){
             for(int columna = 0; columna < 19; columna++){
@@ -31,25 +32,28 @@ public class Tablero {
                         || ((columna == 8 || columna == 10) && fila == 8) || (columna == 9 && fila == 9) || ((columna == 8 || columna == 10) 
                         && fila == 10) ){
                     
-                    mapeo[fila][columna] = (vacio);
+                    mapeo[fila][columna] = vacio;
                     System.out.print(mapeo[fila][columna]);
                     
-                } else if( (columna == 9 && (fila < 8 || fila > 10)) || ((columna < 8 || columna > 10) && fila == 9) ){
+                } else if( (columna == 9 && ((fila > 0 && fila < 8) || (fila > 10 && fila < 18))) || (((columna > 0 && columna < 8) 
+                        || (columna > 10 && columna < 18)) && fila == 9) ){
                     
-                    mapeo[fila][columna] = (pasillos);
+                    mapeo[fila][columna] = pasillos;
                     System.out.print(mapeo[fila][columna]);
                     
                 } else if( ((fila == 8 || fila == 10) && columna == 9) || ((columna == 8 || columna == 10) && fila == 9) ){
                     
-                    mapeo[fila][columna] = (meta);
+                    mapeo[fila][columna] = meta;
                     System.out.print(mapeo[fila][columna]);
                     
                 } else{
                     
-                    mapeo[fila][columna] = (lleno);
+                    cont++;
+                    mapeo[fila][columna] = cont;
                     System.out.print(mapeo[fila][columna]);
                     
                 }
+                System.out.print(" ");
             }
             System.out.println("");
         }
